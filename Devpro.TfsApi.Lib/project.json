@@ -1,0 +1,15 @@
+﻿{
+    "version": "1.0.0-*",
+
+    "dependencies": {
+        "Devpro.TfsApi.Dto": "1.0.0-*",
+        "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
+        "Microsoft.TeamFoundationServer.Client": "14.102.0",
+        "Microsoft.VisualStudio.Services.Client": "14.102.0",
+        "Microsoft.VisualStudio.Services.InteractiveClient": "14.102.0"
+    },
+
+    "frameworks": {
+        "net452": {}
+    }
+}
