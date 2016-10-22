@@ -5,14 +5,18 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F74576C9-42BA-4871-BD62-B2D4046A4674}"
 	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+		build.sh = build.sh
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devpro.TfsApi", "Devpro.TfsApi\Devpro.TfsApi.xproj", "{DDA9F1DF-6B8E-4459-919C-25E47839A37F}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devpro.TfsApi", "src\Devpro.TfsApi\Devpro.TfsApi.xproj", "{DDA9F1DF-6B8E-4459-919C-25E47839A37F}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devpro.TfsApi.Lib", "Devpro.TfsApi.Lib\Devpro.TfsApi.Lib.xproj", "{2343AD07-497F-4D7F-9844-A261ACC2987F}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devpro.TfsApi.Lib", "src\Devpro.TfsApi.Lib\Devpro.TfsApi.Lib.xproj", "{2343AD07-497F-4D7F-9844-A261ACC2987F}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devpro.TfsApi.Dto", "Devpro.TfsApi.Dto\Devpro.TfsApi.Dto.xproj", "{6B3260AF-2269-4471-AD03-5C4CC8E9866F}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devpro.TfsApi.Dto", "src\Devpro.TfsApi.Dto\Devpro.TfsApi.Dto.xproj", "{6B3260AF-2269-4471-AD03-5C4CC8E9866F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B1FA532D-F34C-4318-B292-9D774D7729D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,5 +39,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DDA9F1DF-6B8E-4459-919C-25E47839A37F} = {B1FA532D-F34C-4318-B292-9D774D7729D9}
+		{2343AD07-497F-4D7F-9844-A261ACC2987F} = {B1FA532D-F34C-4318-B292-9D774D7729D9}
+		{6B3260AF-2269-4471-AD03-5C4CC8E9866F} = {B1FA532D-F34C-4318-B292-9D774D7729D9}
 	EndGlobalSection
 EndGlobal
