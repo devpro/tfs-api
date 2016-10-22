@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-#exit if any command fails
-set -e
-
 artifactsFolder="./artifacts"
 
 echo 'Looking if '$artifactsFolder' folder exists'
