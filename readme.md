@@ -1,6 +1,8 @@
 TFS API
 ==============================
 
+[![Build Status](https://travis-ci.org/devpro/tfs-api.svg?branch=master)](https://travis-ci.org/devpro/tfs-api)
+
 # Table of Contents
 * General presentation
 * Technical information
