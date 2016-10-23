@@ -35,7 +35,7 @@ namespace Devpro.TfsApi.Lib
             var queryHierarchyItems = await witClient.GetQueriesAsync(teamProjectName, depth: 2);
 
             // Search for 'My Queries' folder
-            var myQueriesFolder = queryHierarchyItems.FirstOrDefault(qhi => qhi.Name.Equals("My Queries"));
+            var myQueriesFolder = queryHierarchyItems.FirstOrDefault(qhi => qhi.Name == "My Queries");
             if (myQueriesFolder == null)
                 return null;
 
@@ -45,7 +45,7 @@ namespace Devpro.TfsApi.Lib
             QueryHierarchyItem newBugsQuery = null;
             if (myQueriesFolder.Children != null)
             {
-                newBugsQuery = myQueriesFolder.Children.FirstOrDefault(qhi => qhi.Name.Equals(queryName));
+                newBugsQuery = myQueriesFolder.Children.FirstOrDefault(qhi => qhi.Name == queryName);
             }
             if (newBugsQuery == null)
             {

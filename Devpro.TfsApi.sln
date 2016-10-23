@@ -3,13 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F74576C9-42BA-4871-BD62-B2D4046A4674}"
-	ProjectSection(SolutionItems) = preProject
-		.travis.yml = .travis.yml
-		build.sh = build.sh
-		global.json = global.json
-	EndProjectSection
-EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devpro.TfsApi", "src\Devpro.TfsApi\Devpro.TfsApi.xproj", "{DDA9F1DF-6B8E-4459-919C-25E47839A37F}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devpro.TfsApi.Lib", "src\Devpro.TfsApi.Lib\Devpro.TfsApi.Lib.xproj", "{2343AD07-497F-4D7F-9844-A261ACC2987F}"
@@ -17,6 +10,10 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devpro.TfsApi.Dto", "src\Devpro.TfsApi.Dto\Devpro.TfsApi.Dto.xproj", "{6B3260AF-2269-4471-AD03-5C4CC8E9866F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B1FA532D-F34C-4318-B292-9D774D7729D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2ADA96FE-5705-4E76-92AA-C71A922D7326}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devpro.TfsApi.Lib.Tests", "test\Devpro.TfsApi.Lib.Tests\Devpro.TfsApi.Lib.Tests.xproj", "{E07B4100-CF3E-4D69-BD82-EEBC92B27B42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +33,10 @@ Global
 		{6B3260AF-2269-4471-AD03-5C4CC8E9866F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B3260AF-2269-4471-AD03-5C4CC8E9866F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B3260AF-2269-4471-AD03-5C4CC8E9866F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E07B4100-CF3E-4D69-BD82-EEBC92B27B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E07B4100-CF3E-4D69-BD82-EEBC92B27B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E07B4100-CF3E-4D69-BD82-EEBC92B27B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E07B4100-CF3E-4D69-BD82-EEBC92B27B42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +45,6 @@ Global
 		{DDA9F1DF-6B8E-4459-919C-25E47839A37F} = {B1FA532D-F34C-4318-B292-9D774D7729D9}
 		{2343AD07-497F-4D7F-9844-A261ACC2987F} = {B1FA532D-F34C-4318-B292-9D774D7729D9}
 		{6B3260AF-2269-4471-AD03-5C4CC8E9866F} = {B1FA532D-F34C-4318-B292-9D774D7729D9}
+		{E07B4100-CF3E-4D69-BD82-EEBC92B27B42} = {2ADA96FE-5705-4E76-92AA-C71A922D7326}
 	EndGlobalSection
 EndGlobal
