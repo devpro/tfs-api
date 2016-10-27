@@ -32,10 +32,12 @@
 
     "publishOptions": {
         "include": [
-            "wwwroot",
-            "**/*.cshtml",
             "appsettings.json",
-            "web.config"
+            "web.config",
+            "Dockerfile",
+            "project.json",
+            "project.lock.json",
+            "docker-compose.yml"
         ]
     },
 
